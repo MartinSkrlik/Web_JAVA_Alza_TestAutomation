@@ -1,0 +1,11 @@
+/target/
+/bin/
+/test-output/
+drivers/*
+src/config.properties
+src/local.properties
+src/logfile.log
+reports/*
+.classpath
+.settings/org.eclipse.jdt.core.prefs
+.settings/org.eclipse.core.resources.prefs

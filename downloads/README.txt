@@ -1,0 +1,1 @@
+#All files downloaded during a test run will be stored in this folder

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extentreports>
+    <configuration>
+        <encoding>ISO_8859_1</encoding>
+        <theme>dark</theme>
+        <documentTitle>ROBO Report</documentTitle>
+        <reportName>Automation Report</reportName>
+        <timeFormat>HH:mm:ss.SSS</timeFormat>
+        <scripts>
+            <![CDATA[
+               document.getElementById("test-collection").addEventListener('click',function() {
+                   var coll = document.getElementsByClassName("collapsible_acc");
+                   var i;
+
+                   for (i = 0; i < coll.length; i++) {
+                   coll[i].addEventListener("click", function() {
+                   this.classList.toggle("active_acc");
+                   var content = this.nextElementSibling;
+                   if (content.style.display === "block") {
+                     content.style.display = "none";
+                   } else {
+                     content.style.display = "block";
+                   }
+                });
+              }
+              });
+          ]]>
+        </scripts>
+        
+        <styles>
+            <![CDATA[
+            .collapsible_acc {
+               color: white;
+               cursor: pointer;
+               width: 100%;
+               border: none;
+               text-align: left;
+               outline: none;
+               font-size: 14px;
+             }
+            
+             .active_acc, .collapsible_acc:hover {
+               background-color: #919398;
+             } 
+            
+             .collapsible_acc:after {
+               content: '\002B';
+               color: white;
+               font-weight: bold;
+               float: right;
+            }
+            
+             .active_acc:after {
+               content: "\2212";
+               float: right;
+            }
+
+            .content {
+               padding: 0 18px;
+               display: none;
+               overflow: hidden;
+               transition: max-height 0.2s ease-out;
+           }
+           
+           .test-steps th:nth-child(2), .test-steps td:nth-child(2) {
+               max-width: 95px;
+               width: 95px;
+           }
+                
+            ]]>
+        </styles>
+    </configuration>
+</extentreports>

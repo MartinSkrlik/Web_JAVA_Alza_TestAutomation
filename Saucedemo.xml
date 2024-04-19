@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ROBO TEST">
+ <parameter name="TCName"  value="SAUCEDEMO_LOGIN_TEST_TC"/>
+ <parameter name="ResultSwitch" value="OFF"/>
+ <parameter name="StepSwitch"   value="OFF"/>
+  <test name="TEST_EXAMPLE">
+    <classes>
+      <class name="cases.TestHandler">
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

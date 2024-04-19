@@ -1,0 +1,9 @@
+<aspectj>
+    <aspects>
+        <aspect name="performance.PerformanceLogger"/>
+        <weaver options="-verbose -showWeaveInfo">
+            <include within="modules..*"/>
+            <include within="**.PerformanceLogger"/>
+        </weaver>
+    </aspects>
+</aspectj>

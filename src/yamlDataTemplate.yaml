@@ -1,0 +1,9 @@
+dev:
+  test:
+    data: '123'
+    data2: '189'
+    data3: '128'
+sit:
+  test: '456'
+uat:
+  test: '789'

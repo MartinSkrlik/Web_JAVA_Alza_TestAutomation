@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<Configuration>
+
+<Appenders>
+
+ <File name="file" fileName="src/logfile.log" append="true">
+      <PatternLayout pattern="%p{length=1} | %-10.-10t | %d{HH:mm:ss,SSS} | %.-10000m (%c{2}:%L) %n"/>
+ </File>
+
+<Console name="STDOUT" target="SYSTEM_OUT">
+
+<PatternLayout pattern="%p{length=1} | %-10.-10t | %d{HH:mm:ss,SSS} | %.-10000m (%c{2}:%L) %n"/>
+
+</Console>
+
+</Appenders>
+
+<Loggers>
+    
+        <Root level="trace">
+      <AppenderRef ref="file" level="INFO"/>
+      <AppenderRef ref="STDOUT" level="INFO"/>
+    </Root>
+  </Loggers>
+</Configuration>

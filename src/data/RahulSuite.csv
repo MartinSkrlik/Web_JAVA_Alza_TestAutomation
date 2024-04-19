@@ -1,0 +1,4 @@
+#PORTAL,ENVIRONMENT,FLOW,TESTCASE_NUMBER,BROWSER,BROWSER_VER,DRIVER_VER,TITLE,RADIO,COUNTRY,OPTION,CHECKBOX,WINDOW_TITLE,TAB_TITLE,NAME,ALERT,CONFIRM_ALERT,NUMBER_OF_ROWS,
+Rahul,PROD,Exercise_1,1,CHROME,-,-,Practice Page,radio1,Slovakia (Slovak Republic),Option2,Option3,An Academy to learn Everything about Testing,Rahul Shetty Academy,Martin,Hello Martin;; share this practice page and share your knowledge,Hello Martin;; Are you sure you want to confirm?,10,
+
+
